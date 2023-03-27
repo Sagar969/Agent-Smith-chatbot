@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
-const API_KEY = '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';
+const API_KEY = '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';
 
 const MainContext = createContext();
 
@@ -60,13 +60,30 @@ const AppContext = ({ children }) => {
 export { MainContext, AppContext }
 
 const callChatbot = async (msg, setBotMsg) => {
+    // try {
+    //     const openai = new OpenAIApi(new Configuration({ apiKey: API_KEY }));
+    //     const res = await openai.createChatCompletion({
+    //         model: "gpt-3.5-turbo",
+    //         messages: [{ role: "user", content: msg }],
+    //     })
+    //     console.log(res);
+    //     setBotMsg(res.data.choices[0].message.content);
+    // }
+    const endpoint = 'https://api.openai.com/v1/chat/completions';
     try {
-        const openai = new OpenAIApi(new Configuration({ apiKey: API_KEY }));
-        const res = await openai.createChatCompletion({
-            model: "gpt-3.5-turbo",
-            messages: [{ role: "user", content: msg }],
+        const res = await fetch(endpoint, {
+            method: 'POST',
+            headers: {
+                'Content-Type':'application/json',
+                'Authorization':`Bearer ${API_KEY}`
+            },
+            body:JSON.stringify({
+                model: "gpt-3.5-turbo",
+                messages:[{ role: 'user', content: msg }]
+            })
         })
-        setBotMsg(res.data.choices[0].message.content);
+        const data = await res.json();
+        setBotMsg(data.choices[0].message.content);
     }
     catch(err) {
         setBotMsg(`API issue !!! Could not fetch "${msg}"`)
