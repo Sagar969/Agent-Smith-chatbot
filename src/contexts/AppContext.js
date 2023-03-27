@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
-const API_KEY = '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';
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 const MainContext = createContext();
 
