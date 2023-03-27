@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Agent-Smith-chatbot/static/css/main.d36e112d.css",
-    "main.js": "/Agent-Smith-chatbot/static/js/main.08e231e9.js",
+    "main.js": "/Agent-Smith-chatbot/static/js/main.e2ff1bbe.js",
     "static/media/bg.jpg": "/Agent-Smith-chatbot/static/media/bg.c3f3ca1bffbf0204d7cd.jpg",
     "static/media/logo.jpg": "/Agent-Smith-chatbot/static/media/logo.e31fe0b84c72678631a6.jpg",
     "index.html": "/Agent-Smith-chatbot/index.html",
     "main.d36e112d.css.map": "/Agent-Smith-chatbot/static/css/main.d36e112d.css.map",
-    "main.08e231e9.js.map": "/Agent-Smith-chatbot/static/js/main.08e231e9.js.map"
+    "main.e2ff1bbe.js.map": "/Agent-Smith-chatbot/static/js/main.e2ff1bbe.js.map"
   },
   "entrypoints": [
     "static/css/main.d36e112d.css",
-    "static/js/main.08e231e9.js"
+    "static/js/main.e2ff1bbe.js"
   ]
 }
