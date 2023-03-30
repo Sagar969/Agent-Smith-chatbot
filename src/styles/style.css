@@ -157,4 +157,7 @@ body {
     .bot-box {
         margin-left: 5%;
     }
+    .message {
+        max-width: 75%;
+    }
 }
