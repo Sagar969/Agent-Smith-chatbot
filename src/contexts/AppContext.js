@@ -1,10 +1,18 @@
 import { createContext, useEffect, useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
-const API_KEY = process.env.REACT_APP_API_KEY;
 
 const MainContext = createContext();
 
+let API_KEY;
+const getApiKey = async () => {
+  const querySnapshot = await getDocs(collection(db, 'openaiapikey'));
+  querySnapshot.forEach((doc) => {
+    API_KEY = doc.data().API_KEY;
+  });
+};
+
 const AppContext = ({ children }) => {
+    getApiKey();
 
     const [msg, setMsg] = useState('');
     const [botMsg, setBotMsg] = useState('');
