@@ -1,15 +1,18 @@
 import { createContext, useEffect, useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
 
-const MainContext = createContext();
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../config/firebase';
 
 let API_KEY;
 const getApiKey = async () => {
-  const querySnapshot = await getDocs(collection(db, 'openaiapikey'));
-  querySnapshot.forEach((doc) => {
-    API_KEY = doc.data().API_KEY;
-  });
+    const querySnapshot = await getDocs(collection(db, 'openaiapikey'));
+    querySnapshot.forEach((doc) => {
+        API_KEY = doc.data().API_KEY;
+    });
 };
+
+const MainContext = createContext();
 
 const AppContext = ({ children }) => {
     getApiKey();
