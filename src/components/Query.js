@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import { MainContext } from '../contexts/AppContext';
 import { MdSend } from 'react-icons/md'
 
@@ -38,7 +38,6 @@ const Query = () => {
 
   return (
     <div className="query">
-      <div className="blur"></div>
       <input
         ref={inpRef}
         type="text"

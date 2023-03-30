@@ -35,16 +35,12 @@ Desktop and Mobile view -
 
 #### Desktop View
 ![](./screenshots/desktop1.png)
-![](./screenshots/desktop4.png)
-![](./screenshots/desktop3.png)
 
 #### Mobile View
 <p align="center">
-<img src="./screenshots/mobile1.jpg" width=250px />
-<img src="./screenshots/mobile2.jpg" width=250px />
-<img src="./screenshots/mobile3.jpg" width=250px />
-<img src="./screenshots/mobile4.jpg" width=250px />
-<img src="./screenshots/mobile5.jpg" width=250px />
+<img src="./screenshots/mobile1.jpg" width=32% />
+<img src="./screenshots/mobile2.jpg" width=32% />
+<img src="./screenshots/mobile3.jpg" width=32% />
 </p>
 
 

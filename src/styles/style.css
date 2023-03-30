@@ -45,14 +45,6 @@ body {
     border-radius: 20px 20px 0 0;
     overflow: hidden;
 }
-.blur {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(#fff, .9);
-    backdrop-filter: blur(2px);
-}
 .query-text {
     position: relative;
     width: 70%;

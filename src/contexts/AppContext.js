@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from "react";
-import { Configuration, OpenAIApi } from "openai";
 
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../config/firebase';

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { MainContext } from '../contexts/AppContext';
 import styled, { keyframes } from 'styled-components';
 
