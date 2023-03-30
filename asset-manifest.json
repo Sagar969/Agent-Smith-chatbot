@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Agent-Smith-chatbot/static/css/main.17a11869.css",
-    "main.js": "/Agent-Smith-chatbot/static/js/main.d1ef69e5.js",
+    "main.css": "/Agent-Smith-chatbot/static/css/main.c6bccdd3.css",
+    "main.js": "/Agent-Smith-chatbot/static/js/main.6a1f67f8.js",
     "static/media/bg.jpg": "/Agent-Smith-chatbot/static/media/bg.c3f3ca1bffbf0204d7cd.jpg",
     "static/media/logo.jpg": "/Agent-Smith-chatbot/static/media/logo.e31fe0b84c72678631a6.jpg",
     "index.html": "/Agent-Smith-chatbot/index.html",
-    "main.17a11869.css.map": "/Agent-Smith-chatbot/static/css/main.17a11869.css.map",
-    "main.d1ef69e5.js.map": "/Agent-Smith-chatbot/static/js/main.d1ef69e5.js.map"
+    "main.c6bccdd3.css.map": "/Agent-Smith-chatbot/static/css/main.c6bccdd3.css.map",
+    "main.6a1f67f8.js.map": "/Agent-Smith-chatbot/static/js/main.6a1f67f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.17a11869.css",
-    "static/js/main.d1ef69e5.js"
+    "static/css/main.c6bccdd3.css",
+    "static/js/main.6a1f67f8.js"
   ]
 }
