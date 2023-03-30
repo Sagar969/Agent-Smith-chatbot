@@ -21,9 +21,6 @@ body {
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
 }
-/* .app {
-    background: red;
-} */
 .logo-container {
     margin: 10px;
     margin-left: 5%;
@@ -116,7 +113,6 @@ body {
     position: absolute;
     bottom: 0px;
     border-top: 15px solid transparent;
-    /* border-bottom: 15px solid transparent; */
     border-right: 15px solid var(--purplish-blue);
     transform: translateX(-80%);
 }
@@ -124,7 +120,11 @@ body {
     padding: 5px;
     padding-inline: 10px;
     font-size: 1.1rem;
-    color: var(--font-color-1)
+    color: var(--font-color-1);
+    word-wrap: break-word;
+}
+.message p p {
+    padding: 0;
 }
 .user-box {
     align-self: self-end;

@@ -13,33 +13,6 @@ const slideRightAni = keyframes`
 let AniDiv = styled.div`
 `;
 
-const msgs = [
-    { msg: 'hi', entity:'user', time: '03:12' },
-    { msg: 'yo whaats up', entity:'bot', time: '03:12' },
-    { msg: 'hi', entity:'user', time: '03:12' },
-    { msg: 'yo whaats up', entity:'bot', time: '03:12' },
-    { msg: 'hi', entity:'user', time: '03:12' },
-    { msg: 'yo whaats up', entity:'bot', time: '03:12' },
-    { msg: 'hi', entity:'user', time: '03:12' },
-    { msg: 'yo whaats up', entity:'bot', time: '03:12' },
-    { msg: 'hi', entity:'user', time: '03:12' },
-    { msg: 'yo whaats up', entity:'bot', time: '03:12' },
-    { msg: 'hi', entity:'user', time: '03:12' },
-    { msg: 'yo whaats up', entity:'bot', time: '03:12' },
-    { msg: 'hi', entity:'user', time: '03:12' },
-    { msg: 'yo whaats up', entity:'bot', time: '03:12' },
-    { msg: 'hi', entity:'user', time: '03:12' },
-    { msg: 'yo whaats up', entity:'bot', time: '03:12' },
-    { msg: 'hi', entity:'user', time: '03:12' },
-    { msg: 'yo whaats up', entity:'bot', time: '03:12' },
-    { msg: 'hi', entity:'user', time: '03:12' },
-    { msg: 'yo whaats up', entity:'bot', time: '03:12' },
-    { msg: 'hi', entity:'user', time: '03:12' },
-    { msg: 'yo whaats up', entity:'bot', time: '03:12' },
-    { msg: 'hi', entity:'user', time: '03:12' },
-    { msg: 'yo whaats up', entity:'bot', time: '03:12' },
-]
-
 const MessageArray = () => {
   const { msgs } = useContext(MainContext);
   return (
@@ -61,8 +34,13 @@ export default MessageArray;
 
 const Message = ({ item, msgs }) => {
     const entity = msgs[item].entity;
-    const msg = msgs[item].msg;
     const time = msgs[item].time;
+    let msg = msgs[item].msg;
+    if(Array.isArray(msgs[item].msg)) {
+      const msgArr = msgs[item].msg;
+      msg = msgArr.map(msg => <p>{msg}</p>)
+    }
+
     AniDiv =
       item !== msgs.length - 1
         ? styled.div``

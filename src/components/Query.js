@@ -32,7 +32,7 @@ const Query = () => {
     else {
         btnRef.current.style.opacity = '1';
         btnRef.current.disabled = false;
-        btnRef.current.querySelector('.send-icon').classList.add('hover-btn');
+        if(window.innerWidth > 1000) btnRef.current.querySelector('.send-icon').classList.add('hover-btn');
     }
   }, [isFetching])
 
@@ -47,7 +47,7 @@ const Query = () => {
         onBlur={handleBlur}
       />
       <button ref={btnRef} className="btn-query" onClick={handleSend}>
-        <MdSend className='send-icon hover-btn' />
+        <MdSend className='send-icon' />
       </button>
     </div>
   );
